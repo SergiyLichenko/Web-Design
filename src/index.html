@@ -1,128 +1,181 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Oculus</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta charset="utf-8">
+	<title>Oculus</title>
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	
+	<script src="libs/scroll/scroll.min.js"></script>
 </head>
-<body >
-	<header class="header background-dark-gray">
-		<div class="div-icon">
-			<div class="icon"/>
-		</div>		
-		<div class="menu-div">
-			<menu class="menu">
-			   <li class="first-menu-item"><strong>GEAR VR</strong></li>
-			   <li><strong>EXPLORE</strong></li>
-			   <li><strong>DEVICES</strong></li>
-			   <li><strong>SUPPORT</strong></li>
-		  	</menu>
-		</div>		
-  	</header>
-	<div class="background-gray">
-		<img class="img-header" src="images/Header.png" />
-	</div>
-	<div>
-		<div class="background-dark-gray txt-center">
-			<p class="txt-center-header"><strong>Let your mind explore</strong></p>
-			<p class="txt-center-txt">
-				Oculus is radically redefining gaming and entertainment with 3D interactive content.<br/>
-				Immerse yourself in games. Go inside movies.Time travel, space travel or just hang with<br/>
-				friends in VR - you have endless worlds to explore.
-			</p>
-			<div class="outer">
-	  			<button class="oval-button inner">
-					<p class="txt-btn-inside"><strong>Explore Oculus Experiences</strong></p>
-				</button>
-			</div>			
-		</div>
-		<div class="hover-div">
-			<p class="txt-hover">FEEL THE CONTENT</p>
-			<p class="txt-hover txt-hover-center">Look Inside Oculus</p>
-			<img class="btn-play" src="images/Play.png">
-		</div>
-		<img class="img-look-inside" src="images/Look Inside.jpg">
-		<div class="txt-center-hover">
-			<p class="txt-center-header txt-header">
-				<strong>Download revolutional movies and experiences</strong>
-			</p>
-			<p class="txt-center-txt">
-				It is easy to transport yourself with the Gear VR. Whether you want to play a game,<br/>
-				take a virutal vacation or watch a movie, the possibilities with Gear VR are limitless
-			</p>
-			<div class="outer">
-	  			<button class="oval-button inner">
-					<p class="txt-btn-inside"><strong>Buy Now</strong></p>
-				</button>
+<body>
+	<header>
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="navbar-header">
+						<button class="navbar-toggle collapsed hamburger"  data-toggle="collapse" data-target="#top_menu">
+							<i class="fa fa-bars fa-2x " aria-hidden="true"></i>	
+						</button>
+
+						<a href="index.html" class="navbar-brand">
+							<div class="logo"></div>
+						</a>
+					</div>
+					
+					<div class="collapse navbar-collapse" id="top_menu">
+						<ul class="menu">
+							<li><a href="#explore_section" class="scroll">EXPLORE</a></li>
+							<li><a href="#look_inside_section" class="scroll">INSIDE</a></li>
+							<li><a href="#experience_section" class="scroll">EXPERIENCE</a></li>
+							<li><a href="#devices_section" class="scroll">DEVICES</a></li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</nav>		
+	</header>
+	<section class="header_img"> 
+		<div class="container">
+			<div class="row">
+				<div>
+					<img src="images/Header.png" class="img-responsive" alt="Header">	
+				</div>
 			</div>
 		</div>
-	</div>
-	<img src="images/movies.png" class="full-width">
-	<div class="full-width for-split">
-		<div class="background-gray half half-left">
-			<img class="img-half" src="images/Rift.png">
-			<p class="txt-half-header"><strong>Rift</strong></p>
-			<div class="outer">
-	  			<button class="oval-button inner">
-					<p class="txt-btn-inside"><strong>Learn More</strong></p>
-				</button>
+	</section>
+	<section id="explore_section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 title_block">
+					 <h1>Let your mind explore</h1>
+					 <p>
+						Oculus is radically redefining gaming and entertainment with 3D interactive content.
+						Immerse yourself in games. 
+						Go inside movies.Time travel, space travel or just hang with friends in VR - you have endless worlds to explore.
+					</p>
+					<button class="my_btn btn_top btn btn-default">Explore Oculus Experiences</button>
+				</div>
 			</div>
-	    </div>
-	    <div class="background-dark-gray half half-right">
-	    	<img class="img-half" src="images/Gear VR.png">
-	    	<p class="txt-half-header"><strong>Gear VR</strong></p>
-	    	<div class="outer">
-	  			<button class="oval-button inner">
-					<p class="txt-btn-inside"><strong>Learn More</strong></p>
-				</button>
+		</div>
+	</section>
+
+	<section id="look_inside_section">
+		<div class="container">
+			<div class="row">
+				<div class="look_inside">
+					<div>
+						<div class="hover_content hover_descr">
+							<div class="text_wrap">
+									<p>FEEL THE CONTENT</p>
+									<h2>Look Inside Oculus</h2>
+									<button class="btn btn-default my_btn btn_play">
+											<img src="images/Play.png" alt="Play">
+									</button>
+							</div>					
+						</div>
+						<img src="images/Look Inside.jpg" class="hover_content img-responsive" alt="Look Inside">
+					</div>
+				</div>
 			</div>
-	    </div>
-	</div>
+		</div>
+	</section>
+	
+	<div class="separator"></div>
+	<section id="experience_section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 title_block">
+					 <h1>Download revolutional movies and experiences</h1>
+					 <p>
+					 	It is easy to transport yourself with the Gear VR. 
+					 	Whether you want to play a game, take a virtual vacation, or watch a movie, the possibilities with Gear VR are limitless
+					</p>
+					<button class="my_btn btn_top btn btn-default">Buy Now</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<img src="images/Movies.png" class="img-responsive movies_img" alt="Movies">
+			</div>
+		</div>
+	</section>
+
+	<section id="devices_section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 product">
+					<img src="images/Rift.png" class="img-responsive product_img" alt="Rift">
+					<div class="title_block">
+						<h1>Rift</h1>
+						<button class="my_btn btn btn-default btn_top">Learn More</button>
+					</div>
+				</div>
+				<div class="col-md-6 gearvr product">
+					<img src="images/Gear VR.png" class="img-responsive product_img" alt="Gear VR">
+					<div class="title_block">
+						<h1>Gear VR</h1>
+						<button class="my_btn btn btn-default btn_top">Learn More</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<footer class="footer">
-		<div class="footer-half">
-			<ul class="full-width">
-				<li class="footer-li">
-					<font color="#f6f6f6">Products</font>
-					<ul class="footer-ul">
-						<li><font color="#cbcbcb">Rift</font></li>
-						<li><font color="#cbcbcb">Touch</font></li>
-						<li><font color="#cbcbcb">Gear VR</font></li>
-						<li><font color="#cbcbcb">Experiences</font></li>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-xs-6 col-sm-4 footer_info">
+					<h2>Products</h2>
+					<ul>
+						<li><a href="#">Rift</a></li>
+						<li><a href="#">Touch</a></li>
+						<li><a href="#">Gear VR</a></li>
+						<li><a href="#">Experiences</a></li>
 					</ul>
-				</li>
-				<li class="footer-li footer-li-second">
-					<font color="#f6f6f6">Developers</font>
-					<ul class="footer-ul">
-						<li><font color="#cbcbcb">Developer Center</font></li>
-						<li><font color="#cbcbcb">Docs</font></li>
-						<li><font color="#cbcbcb">Downloads</font></li>
-						<li><font color="#cbcbcb">Developer Blog</font></li>
+				</div>
+				<div class="col-md-3 hidden-xs col-sm-4 footer_info">
+					<h2>Developers</h2>
+					<ul>
+						<li><a href="#">Developer Center</a></li>
+						<li><a href="#">Docs</a></li>
+						<li><a href="#">Downloads</a></li>
+						<li><a href="#">Developer Blog</a></li>
 					</ul>
-				</li>
-			</ul>
-		</div>
-		<div class="footer-half">
-			<ul class="full-width">
-				<li class="footer-li">
-					<font color="#f6f6f6">Company</font>
-					<ul class="footer-ul">
-						<li><font color="#cbcbcb">Blog</font></li>
-						<li><font color="#cbcbcb">Careers</font></li>
-						<li><font color="#cbcbcb">Research</font></li>
-						<li><font color="#cbcbcb">News</font></li>
+				</div>
+				<div class="col-md-3 col-xs-6 col-sm-4 footer_info">
+					<h2>Company</h2>
+					<ul>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Research</a></li>
+						<li><a href="#">New</a></li>
 					</ul>
-				</li>
-				<li class="footer-li footer-li-second">
-					<font color="#f6f6f6">Community</font>
-					<ul class="footer-ul">
-						<li><font color="#cbcbcb">Support</font></li>
-						<li><font color="#cbcbcb">Forums</font></li>
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
+				</div>
+				<div class="col-md-3 hidden-sm hidden-xs footer_info">
+					<h2>Community</h2>
+					<ul>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Forums</a></li>
 					</ul>
-				</li>
-			</ul>
+				</div>
+			</div>
 		</div>
 	</footer>
+
+	<script src="libs/jquery/jquery-2.1.4.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,172 @@
+@media only screen and (min-width : 1200px) {
+
+	body{
+		width: 1170px;
+	}
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+	body{
+		width: 970px ;
+	}
+
+	.separator{
+			height: 150px !important;
+	}
+}
+
+@media only screen and (max-width : 992px) {
+
+	body{
+		width: 750px;
+	}
+
+	.menu li a{
+		font-size: 16px !important;
+
+	}
+
+	#devices_section img{
+		margin: 0;
+	}
+	
+	.separator{
+			height: 250px !important;
+	}
+
+	#look_inside_section{
+		height: 200px !important;
+	}
+
+	.navbar-header{
+		width: 70px;
+	}
+	
+}
+
+@media only screen and (max-width : 768px) {
+
+	body{
+		width: 100%;
+	}
+	.hamburger{
+		margin-top: 0px;
+		padding-top: 15px;
+	}
+	#top_menu{
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	#top_menu ul{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	#top_menu li{
+		display: block;
+		text-align: center;
+		background-color: #ebebeb;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	#top_menu li:hover{
+		background-color: #d8d8d8;		
+	}
+
+	#top_menu li a{
+		display: block;
+		font-size: 24px;
+	}
+
+	.title_block p{
+		font-size:16px !important;
+	}
+	
+	.my_btn{
+		font-size: 18px !important;
+	}
+
+	#explore_section{
+		height: 350px !important;
+	}
+	
+	.look_inside img{
+		padding: 0;
+	}
+
+	.navbar-header{
+		width: 100%;
+	}
+	
+	#look_inside_section{
+		background-color: white !important;
+	}
+
+	.footer{
+		height: 200px !important;
+	}
+
+	.footer_info h2{
+		margin-top: 10px !important;
+	}
+
+	.footer_info ul li{
+		padding-bottom: 10px !important;
+		font-size: 16px !important;
+	}
+
+	.text_wrap p{
+		font-size:16px !important;
+	}
+
+	.product img{
+		padding-top: 20px;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	
+	.product{
+		height: 450px !important;
+	}	
+	
+	.separator{
+		height: 50px !important;
+	}
+
+	.title_block p{
+		font-size: 12px !important;
+	}
+
+	.title_block button{
+		font-size: 14px !important;
+	}
+
+	.btn_top{
+		padding: 5px 20px !important;
+	}
+
+	.btn_play img{
+		height: 50px !important;
+		width: 50px !important;
+	}
+
+	.text_wrap p{
+		font-size:12px !important;
+	}
+
+	.product img{
+		padding-top: 50px;
+	}
+}
+
+@media only screen and (max-width : 320px) {
+	.product{
+		height: 400px !important;
+	}
+}
